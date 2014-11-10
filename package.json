@@ -39,6 +39,8 @@
     "grunt": "~0.4.4"
   },
   "keywords": [
-    "gruntplugin,cmd,seajs"
+    "gruntplugin",
+    "cmd",
+    "seajs"
   ]
 }
