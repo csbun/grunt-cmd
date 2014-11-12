@@ -108,7 +108,9 @@ module.exports = function (grunt) {
             }
         });
 
-        callback && callback();
+        if (callback) {
+            callback();
+        }   
     }
 
     grunt.registerMultiTask(TASK_NAME, DESCRIPTION, function () {
