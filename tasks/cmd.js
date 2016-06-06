@@ -17,7 +17,7 @@ module.exports = function (grunt) {
         JS_EXT_RE = /\.js$/;
 
     // preprocess template in options
-    // default template delimiters are 
+    // default template delimiters are
     function processOptions(opt) {
         keys(opt).forEach(function (key) {
             var value = opt[key];
@@ -76,7 +76,7 @@ module.exports = function (grunt) {
 
             // compile cmd module
             if (meta) {
-                id = meta.id || cmd.pathToId(file, base),
+                id = meta.id || cmd.pathToId(file, base);
                 deps = (meta.dependencies || []).map(function (dep) {
                     var orgiDep = dep;
                     if (RELATIVE_RE.test(dep)) {
@@ -110,7 +110,7 @@ module.exports = function (grunt) {
 
         if (callback) {
             callback();
-        }   
+        }
     }
 
     grunt.registerMultiTask(TASK_NAME, DESCRIPTION, function () {
